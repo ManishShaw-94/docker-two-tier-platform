@@ -276,11 +276,3 @@ known and deliberate — each is the natural next increment.
 * Separation of domain logic from transport, and of build contexts from each other
 * Explicit upstream failure handling at the service boundary
 * A verification path that isolates faults to a specific layer instead of guessing
-
----
-
-## Author
-
-**Manish Shaw** · [manish.shaw@powertechconsulting.com.au](mailto:manish.shaw@powertechconsulting.com.au)
-
-Issues and pull requests are welcome.
