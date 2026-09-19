@@ -14,12 +14,13 @@ app.get('/', function(req, res) {
 // ejs model used to template data from node.js to you html 
 app.set('view engine', 'ejs');
 
-//URL from where frontend will detch data from the backend. Currently it's hardcoded
+//URL from where frontend will fetch data from the backend. Currently it's hardcoded
 //const URL = 'http://localhost:8000/api';
 
 
 //Get the URL from the environment variable 
 //OR If environment vaibale is not present then fetch directly from http://localhost:8000/api
+// BACKEND_URL is an environment variable defined in Dockerfile-frontend
 const URL = process.env.BACKEND_URL || 'http://localhost:8000/api';
 
 const fetch = (...args) =>
